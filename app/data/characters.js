@@ -1,8 +1,8 @@
-[
+var Characters = [
   {
-    "name":"Luffy",
-    "photo":"https://media.giphy.com/media/UlexC9HXTiNz2/giphy.gif",
-    "scores":[
+    name:"Luffy",
+    photo:"https://media.giphy.com/media/UlexC9HXTiNz2/giphy.gif",
+    scores:[
         5,
         1,
         2,
@@ -16,9 +16,9 @@
       ]
   },
   {
-    "name":"Trafalgar Law",
-    "photo":"https://media.giphy.com/media/Q4AcSYYJTn7Es/giphy.gif",
-    "scores":[
+    name:"Trafalgar Law",
+    photo:"https://media.giphy.com/media/Q4AcSYYJTn7Es/giphy.gif",
+    scores:[
         4,
         1,
         2,
@@ -32,9 +32,9 @@
       ]
   },
   {
-    "name":"Sanji",
-    "photo":"https://media.giphy.com/media/BgLx3ooIiExcQ/giphy.gif",
-    "scores":[
+    name:"Sanji",
+    photo:"https://media.giphy.com/media/BgLx3ooIiExcQ/giphy.gif",
+    scores:[
         4,
         1,
         4,
@@ -48,9 +48,9 @@
       ]
   },
   {
-    "name":"Garp",
-    "photo":"https://media.giphy.com/media/145lMkgQPL6fe0/giphy.gif",
-    "scores":[
+    name:"Garp",
+    photo:"https://media.giphy.com/media/145lMkgQPL6fe0/giphy.gif",
+    scores:[
         3,
         4,
         3,
@@ -64,9 +64,9 @@
       ]
   },
   {
-    "name":"Nami",
-    "photo":"https://media.giphy.com/media/GQUkEUo41fw5O/giphy.gif",
-    "scores":[
+    name:"Nami",
+    photo:"https://media.giphy.com/media/GQUkEUo41fw5O/giphy.gif",
+    scores:[
         5,
         4,
         1,
@@ -80,9 +80,9 @@
       ]
   },
   {
-    "name":"Usopp",
-    "photo":"https://media.giphy.com/media/FWZwatTzE7fri/giphy.gif",
-    "scores":[
+    name:"Usopp",
+    photo:"https://media.giphy.com/media/FWZwatTzE7fri/giphy.gif",
+    scores:[
         4,
         2,
         4,
@@ -96,9 +96,9 @@
       ]
   },
   {
-    "name":"Akainu",
-    "photo":"https://media.giphy.com/media/1Thu2O3d1grbW/giphy.gif",
-    "scores":[
+    name:"Akainu",
+    photo:"https://media.giphy.com/media/1Thu2O3d1grbW/giphy.gif",
+    scores:[
         2,
         1,
         3,
@@ -112,9 +112,9 @@
       ]
   },
   {
-    "name":"Ace",
-    "photo":"https://media.giphy.com/media/3EZfVaxkmb1de/giphy.gif",
-    "scores":[
+    name:"Ace",
+    photo:"https://media.giphy.com/media/3EZfVaxkmb1de/giphy.gif",
+    scores:[
         5,
         1,
         2,
@@ -128,9 +128,9 @@
       ]
   },
   {
-    "name":"Buggy",
-    "photo":"https://media.giphy.com/media/5Hx5sYTXCB5Xa/giphy.gif",
-    "scores":[
+    name:"Buggy",
+    photo:"https://media.giphy.com/media/5Hx5sYTXCB5Xa/giphy.gif",
+    scores:[
         3,
         3,
         1,
@@ -144,3 +144,5 @@
       ]
   }
 ]
+
+module.exports = Characters;
