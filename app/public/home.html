@@ -32,7 +32,7 @@
             margin: 0 auto;
         }
         .head-div{
-            background-color: red;
+            background-color: #71B9E3;
             padding: 20px;
             color: white;
             height: 250px;
@@ -44,7 +44,7 @@
         #header-description{
             font-size: 30px;
         }
-        .btn-info{
+        .btn-success{
             margin-left: 550px;
             font-size: 30px;
             margin-top: 15px;
@@ -55,6 +55,47 @@
         }
         .about{
             margin-bottom: 40px;
+        }
+
+        #avatar-pic{
+            margin-left: 120px;
+        }
+
+        .yellow-circle{
+            background-color: yellow;
+            height: 220px;
+            width: 220px;
+            border-radius: 50px;
+            margin-left: 150px;
+        }
+
+        #money-pic{
+            margin:35px;
+        }
+
+        .feedback{
+            padding-top: 50px;
+            background-color: #3B81EB;
+            color: white;
+            height: 500px;
+        }
+
+        .feedback-title{
+            font-size: 60px;
+            padding-bottom: 35px;
+        }
+        .profiles{
+            padding-bottom: 30px;
+        }
+        .profile-img{
+            border-radius: 75px;
+            border: 5px solid white;
+        }
+        #app-footer{
+            border: 1px solid black;
+            padding-top: 10px;
+            width: 50%;
+            margin-left: 275px;
         }
     </style>
 
@@ -82,23 +123,24 @@
         <div class="col-lg-12 head-div">
             <h3 class="text-center" id="header-title">Find you which One Piece Character are you!</h3>
             <h4 class="text-center" id="header-description">It's simple, just click that button and find out.</h4>
-            <button class="btn btn-info">Get Started</button>
+            <button class="btn btn-success">Get Started</button>
         </div>
     </div>
 
     <div class="container">
         <div class="row about">
             <div class="col-lg-6">
-                <h1>Determines which "One Piece" character are you</h1>
+                <h1>Determines which "One Piece" character are you.</h1>
                 <p>Using preice calucations and complex althorgirms we are able to determine which character you most reseamble in the one piece unieverse.</p>
             </div>
             <div class="col-lg-6">
-                <h1>Hello</h1>
+                <img src="../gifs/luffy-pic.jpg" id="avatar-pic" height="220" width="220">
+                <!-- <div class="yellow-circle"></div> -->
             </div>
         </div>
         <div class="row">
             <div class="col-lg-6">
-                <h1>Hello</h1>
+                <div class="yellow-circle"><img src="../gifs/money-pic.png" id="money-pic" height="150" width="150"></div>
             </div>
             <div class="col-lg-6">
                 <h1>This application is free of charge, so no refunds!</h1>
@@ -107,8 +149,24 @@
         </div>
     </div>
 
+    <div class="container feedback">
+        <h3 class="text-center feedback-title">What users have to say!</h3>
+        <div class="row profiles">
+                <div class="col text-center"><img src="../gifs/jessica-pic.jpg" class="profile-img"></div>
+                <div class="col text-center"><img src="../gifs/paul-pic.jpg" class="profile-img"></div>
+        </div>
+        <div class="row">
+            <h1 class="col text-center">Jessica M</h1>
+            <h1 class="col text-center">Paul H</h1>
+        </div>
+        <div class="row">
+            <div class="col text-center">This app is amazing, I got my match right away. I fell in love with my matched character and now I'm cosplaying as them this upcoming DragonCon!</div>
+            <p class="col text-center">This app is cool, this made me fall in love with anime again, I'm gonna marry an anime pillow now, Thanks PirateFinder! </p>
+        </div>
+    </div>
+
     <div class="container">
-        
+        <footer id="app-footer"><h4 class="text-center">Built by <a href="https://github.com/Bryanp2033" target="_blank" style="text-decoration: none">Bryan</a></h4></footer>
     </div>
 </body>
 </html>
