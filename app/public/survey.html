@@ -7,7 +7,7 @@
     <title>Survey Page</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
@@ -16,6 +16,7 @@
 </head>
 <style>
     body{
+        /* images on the app don't work, from a classmate's advice I would need to host the images on imgur and pull the url instead */
         background-image: url("../gifs/one-piece-background.jpg");
         background-size: cover;
         font-family: 'Slabo 27px', serif;
@@ -66,20 +67,20 @@
             <div class="form-group">
                 <label for="question-1">From 1 being the lowest and 5 being the highest, How important are your friends and family to you?</label>
                 <select class="form-control" id="question-1">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
+                    <option value=1>1</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                    <option value=4>4</option>
                 </select>
             </div>
 
             <div class="form-group">
                 <label for="question-2">If there was a robber coming right towards you, what would you do?</label>
                 <select class="form-control" id="question-2">
-                    <option>1. Fight them</option>
-                    <option>2. Run away</option>
-                    <option>3. Plea for mercy</option>
-                    <option>4. Neogotiate</option>
+                    <option value=1>1. Fight them</option>
+                    <option value=2>2. Run away</option>
+                    <option value=3>3. Plea for mercy</option>
+                    <option value=4>4. Neogotiate</option>
                 </select>
             </div>
 
@@ -87,10 +88,10 @@
             <div class="form-group">
                 <label for="question-3">What is your dream goal?</label>
                 <select class="form-control" id="question-3">
-                    <option>1. Be rich</option>
-                    <option>2. Be the king of the pirates</option>
-                    <option>3. Arrest every criminal out there</option>
-                    <option>4. none listed, have other dreams in mind</option>
+                    <option value=1>1. Be rich</option>
+                    <option value=2>2. Be the king of the pirates</option>
+                    <option value=3>3. Arrest every criminal out there</option>
+                    <option value=4>4. none listed, have other dreams in mind</option>
                 </select>
             </div>
 
@@ -98,10 +99,10 @@
             <div class="form-group">
                 <label for="question-4">How would you enjoy your day off?</label>
                 <select class="form-control" id="question-4">
-                    <option>1. Go to the gym</option>
-                    <option>2. Eat and sleep</option>
-                    <option>3. None, you don't enjoy a break</option>
-                    <option>4. go out and drink</option>
+                    <option value=1>1. Go to the gym</option>
+                    <option value=2>2. Eat and sleep</option>
+                    <option value=3>3. None, you don't enjoy a break</option>
+                    <option value=4>4. go out and drink</option>
                 </select>
             </div>
 
@@ -109,10 +110,10 @@
             <div class="form-group">
                 <label for="question-5">How do you want people to view you as?</label>
                 <select class="form-control" id="question-5">
-                    <option>1. Merciful</option>
-                    <option>2. Fun</option>
-                    <option>3. Frightening</option>
-                    <option>4. Respected</option>
+                    <option value=1>1. Merciful</option>
+                    <option value=2>2. Fun</option>
+                    <option value=3>3. Frightening</option>
+                    <option value=4>4. Respected</option>
                 </select>
             </div>
 
@@ -120,10 +121,10 @@
             <div class="form-group">
                 <label for="question-6">What is the most valuable to you?</label>
                 <select class="form-control" id="question-6">
-                    <option>1. Heirlooms</option>
-                    <option>2. Money</option>
-                    <option>3. Your time</option>
-                    <option>4. your Skills/knowledge</option>
+                    <option value=1>1. Heirlooms</option>
+                    <option value=2>2. Money</option>
+                    <option value=3>3. Your time</option>
+                    <option value=4>4. your Skills/knowledge</option>
                 </select>
             </div>
 
@@ -131,45 +132,89 @@
             <div class="form-group">
                 <label for="question-7">What is your favorite color?</label>
                 <select class="form-control" id="question-7">
-                    <option>1. White</option>
-                    <option>2. Red</option>
-                    <option>3. Orange</option>
-                    <option>4. Blue</option>
+                    <option value=1>1. White</option>
+                    <option value=2>2. Red</option>
+                    <option value=3>3. Orange</option>
+                    <option value=4>4. Blue</option>
                 </select>
             </div>
 
             <div class="form-group">
                 <label for="question-8">What weapon would you prefer to use in battle?</label>
                 <select class="form-control" id="question-8">
-                    <option>1. Your fists/legs</option>
-                    <option>2. A sword</option>
-                    <option>3. A staff</option>
-                    <option>4. A slingshot</option>
+                    <option value=1>1. Your fists/legs</option>
+                    <option value=2>2. A sword</option>
+                    <option value=3>3. A staff</option>
+                    <option value=4>4. A slingshot</option>
                 </select>
             </div>
 
             <div class="form-group">
                 <label for="question-9">You see a helpless robber drowning in the lake, What would you do?</label>
                 <select class="form-control" id="question-9">
-                    <option>1. Save them, only to rob them</option>
-                    <option>2. You keep on walking</option>
-                    <option>3. Save them no matter</option>
-                    <option>4. Save them, only to turn them in to the police</option>
+                    <option value=1>1. Save them, only to rob them</option>
+                    <option value=2>2. You keep on walking</option>
+                    <option value=3>3. Save them no matter</option>
+                    <option value=4>4. Save them, only to turn them in to the police</option>
                 </select>
             </div>
 
             <div class="form-group">
                 <label for="question-10">Your Favorite Food?</label>
                 <select class="form-control" id="question-10">
-                    <option>1. Fruits</option>
-                    <option>2. Meats</option>
-                    <option>3. Seafood</option>
-                    <option>4. Pasta</option>
+                    <option value=1>1. Fruits</option>
+                    <option value=2>2. Meats</option>
+                    <option value=3>3. Seafood</option>
+                    <option value=4>4. Pasta</option>
                 </select>
             </div>
 
-        <button class="btn btn-success form-button">Submit</button>
+        <button class="btn btn-success" id="form-button">Submit</button>
         </form>
+        <div id="hello"></div>
+        <div id="user-pic"></div>
     </div>
+
+    <script type="text/javascript">
+        $("#form-button").on('click', function(event){
+            event.preventDefault();
+            var userName = $("#user-name").val().trim()
+           
+            var userLink = $("#user-link").val().trim()
+           
+            var scores = []
+
+            scores.push($('#question-1').val());
+            scores.push($('#question-2').val());
+            scores.push($('#question-3').val());
+            scores.push($('#question-4').val());
+            scores.push($('#question-5').val());
+            scores.push($('#question-6').val());
+            scores.push($('#question-7').val());
+            scores.push($('#question-8').val());
+            scores.push($('#question-9').val());
+            scores.push($('#question-10').val());
+
+            var finalResults = {
+                name: userName,
+                link: userLink,
+                scores: scores,
+            }
+
+            console.log(finalResults.scores)
+
+            $.post("/api/new", finalResults)
+                .done(function(data){
+                console.log(data);
+
+
+           //  I will peusdo code this part out as I'm having trouble coding it out
+            //    I will append the data information into a modal where it will display the result to the user
+
+            })
+
+
+        })
+    </script>
 </body>
 </html>
